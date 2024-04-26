@@ -10,7 +10,6 @@ import Link from "next/link";
 
 const jetbrainsRegular = JetBrains_Mono({ subsets: ["latin"], weight: "400" });
 const robotoBold = Roboto({ subsets: ["latin"], weight: "700" });
-
 const TEXTS = ["a programmer", "a student", "a builder", "a designer", "an engineer"];
 
 const Hero = () => {
@@ -30,7 +29,7 @@ const Hero = () => {
           alt="bronx"
           layout="fill"
           priority={true}
-          className="opacity-70"
+          className="opacity-90"
           objectFit="cover"
         />
         <div className="absolute w-full h-full top-0 left-0 flex flex-col">
