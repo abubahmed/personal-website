@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
   {
     title: "Instagram clone",
     description:
@@ -80,4 +80,30 @@ const projects = [
   },
 ];
 
-export default projects;
+export const socials = [
+  {
+    name: "Devpost",
+    icon: "https://www.iconarchive.com/download/i149551/simpleicons-team/simple/devpost.1024.png",
+    link: "https://devpost.com/abuahmed0821",
+  },
+  {
+    name: "Github",
+    icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+    link: "https://github.com/adb8",
+  },
+  {
+    name: "LinkedIn",
+    icon: "https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png",
+    link: "https://www.linkedin.com/in/abu-ahmed-b5469b249/",
+  },
+  {
+    name: "leetcode",
+    icon: "https://www.svgrepo.com/show/341985/leetcode.svg",
+    link: "https://leetcode.com/u/adb8/",
+  },
+];
+
+export const email = "abuahmed0821@gmail.com";
+export const name = "Abu Ahmed!";
+export const about =
+  "I'm an incoming CS major interested in website/mobile app development, machine learning, and data analysis. I'm currently a senior at The Bronx High School of Science in NYC and I like to work on personal projects and compete in hackathons in my free time. Feel free to learn more about me through my socials or my projects!";
