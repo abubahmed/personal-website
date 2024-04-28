@@ -5,3 +5,11 @@
 body {
   background-color: #ffffff;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  outline: none;
+}
