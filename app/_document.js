@@ -6,7 +6,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta name="format-detection" content="email=no" />
-          {/* other head elements */}
+          <title>Abu's Personal Portfolio</title>
         </Head>
         <body>
           <Main />
