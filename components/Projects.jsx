@@ -5,20 +5,12 @@ import ProjectCard from "./ProjectCard";
 import { JetBrains_Mono } from "next/font/google";
 import { useEffect, useRef, useState } from "react";
 
+const jetbrainsLight = JetBrains_Mono({ subsets: ["latin"], weight: "300" });
+const jetbrainsExtralight = JetBrains_Mono({ subsets: ["latin"], weight: "200" });
 const jetbrainsRegular = JetBrains_Mono({ subsets: ["latin"], weight: "400" });
 
 const Projects = () => {
-  const gridRef = useRef(null);
   const [columnsCount, setColumnsCount] = useState(4);
-
-  useEffect(() => {
-    new Masonry(gridRef.current, {
-      itemSelector: ".grid-item",
-      columnWidth: ".grid-sizer",
-      percentPosition: true,
-      gutter: 30,
-    });
-  }, []);
 
   useEffect(() => {
     const updateColumnsCount = () => {
@@ -41,7 +33,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="mb-8 text-center md:text-left">
-      <p className={`${jetbrainsRegular.className} text-lg mb-3 underline`}>projects</p>
+      <p className={`${jetbrainsLight.className} text-lg mb-3 underline`}>projects</p>
       <Masonry gutter="25px" columnsCount={columnsCount}>
         {[...projects]
           .sort((a, b) => {
@@ -50,7 +42,7 @@ const Projects = () => {
             return bDate.localeCompare(aDate);
           })
           .map((project) => (
-            <ProjectCard {...project} key={project.title} />
+            <ProjectCard {...project} key={project.title} className="m-0" />
           ))}
       </Masonry>
     </div>

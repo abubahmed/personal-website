@@ -6,8 +6,8 @@ const Social = ({ icon, name, link }) => {
       <img
         src={icon}
         alt={name}
-        height={24}
-        width={24}
+        height={22}
+        width={22}
         priority={true}
         className="md:mr-4 mx-2 md:ml-0"
       />
