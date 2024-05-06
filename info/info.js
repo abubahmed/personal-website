@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Instagram clone",
     description:
-      "Instagram (website) clone built using React.js, Firebase (Firestore, Authentication, Storage), and TailwindCSS.",
+      "Instagram website clone built using React.js, Firebase (Firestore, Authentication, Storage), and TailwindCSS.",
     github: "https://github.com/adb8/reactjs-firebase-instagram-clone",
     image: "instagram-clone.png",
     created: "04/2024",
@@ -10,36 +10,43 @@ export const projects = [
   {
     title: "Impact Hacks",
     description:
-      "Landing website for the Impact Hacks hackathon (150+ participants, hosted on Devpost) built using Next.js. and TailwindCSS.",
+      "Landing website for the Impact Hacks hackathon (150+ participants, hosted on Devpost) built using Next.js. and TailwindCSS. Deployed using Vercel and hosted at impact-hacks.xyz (no longer live).",
     hyperlinks: [
       {
         text: "Impact Hacks hackathon",
         link: "https://impact-hacks-2023.devpost.com/",
       },
+      {
+        text: "impact-hacks.xyz",
+        link: "https://impact-hacks.xyz/",
+      },
     ],
     github: "https://github.com/adb8/nextjs-impact-hacks/",
-    image: "https://placehold.co/600x350",
+    deployment: "https://impact-hacks.vercel.app/",
+    image: "impact-hacks.png",
     created: "08/2023",
   },
   {
     title: "EduWallet",
     description:
-      "Fullstack web app for tracking and managing student finances built using Next.js, MongoDB, Google OAuth, TailwindCSS, and Chart.js.",
+      "Fullstack web app for tracking and managing student finances built using Next.js, MongoDB, Google OAuth, TailwindCSS, and Chart.js. Deployed using Vercel.",
     github: "https://github.com/adb8/nextjs-mongodb-eduwallet/",
+    deployment: "https://eduwallet.vercel.app/",
     image: "EduWallet.png",
     created: "07/2023",
   },
   {
     title: "UniForMe",
     description:
-      "Fullstack web app for choosing colleges to apply to built using Express.js, Firebase (Realtime Database), HTML, CSS, JS, Chart.js, and US Dep. of Edu. College Scorecard API.",
+      "Fullstack web app for choosing colleges to apply to built using Express.js, Firebase (Realtime Database), HTML, CSS, JS, Chart.js, and US Dep. of Edu. College Scorecard API. Deployed using Render.",
     hyperlinks: [
       {
         text: "US Dep. of Edu. College Scorecard API",
         link: "https://collegescorecard.ed.gov/data/documentation/",
       },
     ],
-    github: "https://github.com/adb8/js-html-css-uniforme/",
+    github: "https://github.com/adb8/js-html-css-firebase-uniforme/",
+    deployment: "https://uniforme.onrender.com/",
     image: "UniForMe.png",
     created: "04/2023",
   },
@@ -62,7 +69,7 @@ export const projects = [
   {
     title: "DigestiCare",
     description:
-      "Mobile app designed to help IBD sufferers realize their trigger foods. Built using React Native, MongoDB, Express.js, Puppeteer, and Edamam Food API. Won 1st place at Google Play's & All Star Code's TEI 2024.",
+      "Mobile app designed to help IBD sufferers realize their trigger foods. Built using React Native (Expo), MongoDB, Express.js, Puppeteer, and Edamam Food API. Won 1st place at Google Play's & All Star Code's TEI 2024.",
     hyperlinks: [
       {
         text: "Edamam Food API",
@@ -76,7 +83,7 @@ export const projects = [
   {
     title: "MyHealth",
     description:
-      "Mobile app for speaking to your doctor, finding hospitals, managing appointments, and receiving AI-powered health screenings. Built using React Native, MongoDB, Express.js, OpenAI API, and Community Benefit Insight's hospital API. Won 1st place at Bronx Science's AtomHacks 2024.",
+      "Mobile app for speaking to your doctor, finding hospitals, managing appointments, and receiving AI-powered health screenings. Built using React Native (Expo), MongoDB, Express.js, OpenAI API, and Community Benefit Insight's hospital API. Won 1st place at Bronx Science's AtomHacks 2024.",
     hyperlinks: [
       {
         text: "Community Benefit Insight's hospital API",
@@ -86,6 +93,10 @@ export const projects = [
         text: "AtomHacks 2024",
         link: "https://atomhacks.org/",
       },
+      {
+        text: "OpenAI API",
+        link: "https://openai.com/api"
+      }
     ],
     github: "https://github.com/adb8/mern-myhealth/",
     image: "MyHealth.png",
@@ -94,7 +105,13 @@ export const projects = [
   {
     title: "Vulnerability classifier",
     description:
-      "Machine learning models to classify insecure code snippets (poor input validation) using Pandas, Tensorflow, and sklearn. Harvested training data using OpenAI API. Achieved 90%+ overall accuracy. Made as a part of a ML research project.",
+      "Machine learning models to classify insecure code snippets (poor input validation) using Pandas, Tensorflow, and scikit-learn. Harvested training data using OpenAI API. Achieved 90%+ overall accuracy. Made as a part of a ML research project.",
+    hyperlinks: [
+      {
+        text: "OpenAI API",
+        link: "https://openai.com/api"
+      }
+    ],
     github: "https://github.com/adb8/vulnerability-classifier",
     image: "vulnerability-classifier.png",
     created: "07/2023",

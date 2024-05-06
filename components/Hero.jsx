@@ -8,7 +8,7 @@ const TEXTS = [`${name}!`, "a programmer!", "a student!", "an engineer!", "a des
 
 const Hero = () => {
   return (
-    <h1 className={`${jetbrainsMedium.className} text-[22px] my-6 text-center md:text-left`}>
+    <h1 className={`${jetbrainsMedium.className} text-[22px] my-8 text-center md:text-left`}>
       Hi, I'm&nbsp;
       <ReactTyped strings={TEXTS} typeSpeed={70} backSpeed={80} loop />
     </h1>
