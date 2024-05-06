@@ -3,7 +3,7 @@ export const projects = [
     title: "Instagram clone",
     description:
       "Instagram website clone built using React.js, Firebase (Firestore, Authentication, Storage), and TailwindCSS.",
-    github: "https://github.com/adb8/reactjs-firebase-instagram-clone",
+    github: "https://github.com/adb8/instagram-clone",
     image: "instagram-clone.png",
     created: "04/2024",
   },
@@ -21,7 +21,7 @@ export const projects = [
         link: "https://impact-hacks.xyz/",
       },
     ],
-    github: "https://github.com/adb8/nextjs-impact-hacks/",
+    github: "https://github.com/adb8/impact-hacks/",
     deployment: "https://impact-hacks.vercel.app/",
     image: "impact-hacks.png",
     created: "08/2023",
@@ -30,7 +30,7 @@ export const projects = [
     title: "EduWallet",
     description:
       "Fullstack web app for tracking and managing student finances built using Next.js, MongoDB, Google OAuth, TailwindCSS, and Chart.js. Deployed using Vercel.",
-    github: "https://github.com/adb8/nextjs-mongodb-eduwallet/",
+    github: "https://github.com/adb8/EduWallet/",
     deployment: "https://eduwallet.vercel.app/",
     image: "EduWallet.png",
     created: "07/2023",
@@ -45,7 +45,7 @@ export const projects = [
         link: "https://collegescorecard.ed.gov/data/documentation/",
       },
     ],
-    github: "https://github.com/adb8/js-html-css-firebase-uniforme/",
+    github: "https://github.com/adb8/UniForMe",
     deployment: "https://uniforme.onrender.com/",
     image: "UniForMe.png",
     created: "04/2023",
@@ -62,7 +62,7 @@ export const projects = [
     title: "Twitter customer service analysis",
     description:
       "Analysis of customer service tweets from six major banks using Pandas, Matplotlib, Latent Dirichlet Allocation, and Vader Sentiment Analysis. Made during Aptitude's AI Pre-Internship.",
-    github: "https://github.com/adb8/twitter-customer-service-analysis/",
+    github: "https://github.com/adb8/twitter-CS-analysis/",
     image: "twitter-customer-service-analysis.png",
     created: "07/2023",
   },
@@ -76,7 +76,7 @@ export const projects = [
         link: "https://developer.edamam.com/food-database-api",
       },
     ],
-    github: "https://github.com/adb8/mern-digesticare/",
+    github: "https://github.com/adb8/DigestiCare/",
     image: "DigestiCare.png",
     created: "03/2024",
   },
@@ -98,7 +98,7 @@ export const projects = [
         link: "https://openai.com/api"
       }
     ],
-    github: "https://github.com/adb8/mern-myhealth/",
+    github: "https://github.com/adb8/MyHealth/",
     image: "MyHealth.png",
     created: "03/2024",
   },
@@ -121,14 +121,14 @@ export const projects = [
     description:
       "Fullstack web app for creating and sharing lightweight notes built MERN stack (MongoDB, Express.js, React.js, Node.js).",
     image: "NoteStack.png",
-    github: "https://github.com/adb8/mern-notestack/",
+    github: "https://github.com/adb8/NoteStack/",
     created: "11/2023",
   },
   {
     title: "Bank management system",
     description:
       "Bank account management system with login, deposit, withdrawal, transfer, account creation/modification/deletion features built using C and a file system database.",
-    github: "https://github.com/adb8/c-bank-management-system/",
+    github: "https://github.com/adb8/bank-management-system/",
     image: "bank-management-system.png",
     created: "05/2024",
   },
