@@ -10,19 +10,19 @@ export const projects = [
   {
     title: "Impact Hacks",
     description:
-      "Landing website for the Impact Hacks hackathon (150+ participants, hosted on Devpost) built using Next.js. and TailwindCSS. Deployed using Vercel and hosted at impact-hacks.xyz (no longer live).",
+      "Landing website for the Impact Hacks hackathon (150+ participants, hosted on Devpost) built using Next.js. and TailwindCSS. Deployed using Vercel and hosted at impacthacks.xyz.",
     hyperlinks: [
       {
         text: "Impact Hacks hackathon",
         link: "https://impact-hacks-2023.devpost.com/",
       },
       {
-        text: "impact-hacks.xyz",
-        link: "https://impact-hacks.xyz/",
+        text: "impacthacks.xyz",
+        link: "https://impacthacks.xyz/",
       },
     ],
     github: "https://github.com/adb8/impact-hacks/",
-    deployment: "https://impact-hacks.vercel.app/",
+    deployment: "https://impacthacks.xyz/",
     image: "impact-hacks.png",
     created: "08/2023",
   },
@@ -105,7 +105,7 @@ export const projects = [
   {
     title: "Vulnerability classifier",
     description:
-      "Machine learning models to classify insecure code snippets (poor input validation) using Pandas, Tensorflow, and scikit-learn. Harvested training data using OpenAI API. Achieved 90%+ overall accuracy. Made as a part of a ML research project.",
+      "Machine learning models to classify insecure code snippets (poor input validation) built using Pandas, Tensorflow, and scikit-learn. Harvested training data using OpenAI API. Achieved 90%+ overall accuracy. Made as a part of a ML research project.",
     hyperlinks: [
       {
         text: "OpenAI API",
@@ -160,4 +160,4 @@ export const socials = [
 export const email = "abuahmed0821@gmail.com";
 export const name = "Abu Ahmed";
 export const about =
-  "I'm an incoming CS major interested in website/mobile app development, machine learning, and data analysis. I'm currently a senior at The Bronx High School of Science in NYC and I like to work on personal projects and compete in hackathons in my free time. Feel free to learn more about me through my socials or my projects!";
+  "I'm a CS major interested in website/mobile app development, machine learning, and data analysis. I'm most proficient in Python and JS and I like to work on personal projects and compete in hackathons in my free time. Feel free to learn more about me through my socials or my projects!";
