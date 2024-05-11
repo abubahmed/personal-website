@@ -3,15 +3,11 @@ import Masonry from "react-responsive-masonry";
 import { projects } from "../info/info";
 import ProjectCard from "./ProjectCard";
 import { JetBrains_Mono } from "next/font/google";
-import { useEffect, useRef, useState } from "react";
-
+import { useEffect, useState } from "react";
 const jetbrainsLight = JetBrains_Mono({ subsets: ["latin"], weight: "300" });
-const jetbrainsExtralight = JetBrains_Mono({ subsets: ["latin"], weight: "200" });
-const jetbrainsRegular = JetBrains_Mono({ subsets: ["latin"], weight: "400" });
 
 const Projects = () => {
   const [columnsCount, setColumnsCount] = useState(4);
-
   useEffect(() => {
     const updateColumnsCount = () => {
       if (window.innerWidth < 768) {
@@ -32,9 +28,9 @@ const Projects = () => {
   }, []);
 
   return (
-    <div id="projects" className="mb-8 text-center md:text-left">
-      <p className={`${jetbrainsLight.className} text-lg mb-3 underline`}>projects</p>
-      <Masonry gutter="25px" columnsCount={columnsCount}>
+    <div id="projects" className="mb-6 text-center md:text-left">
+      <p className={`${jetbrainsLight.className} text-lg mb-4 underline`}>projects</p>
+      <Masonry gutter="24px" columnsCount={columnsCount}>
         {[...projects]
           .sort((a, b) => {
             const aDate = a.created.split("/").reverse().join("");

@@ -2,12 +2,12 @@
 import Socials from "../components/Socials";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
-import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import Hero from "@/components/Hero";
 
 const App = () => {
   return (
-    <div className="w-full px-10 overflow-auto custom-scrollbar">
+    <div className="w-full px-10 overflow-auto">
       <Navbar />
       <Hero />
       <About />

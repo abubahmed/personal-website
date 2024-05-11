@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { JetBrains_Mono } from "next/font/google";
-
 const jetbrainsExtralight = JetBrains_Mono({ subsets: ["latin"], weight: "200" });
 const jetbrainsLight = JetBrains_Mono({ subsets: ["latin"], weight: "300" });
 
@@ -54,11 +53,13 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
           <main
             className={`${github ? "cursor-pointer" : ""} w-full`}
             onClick={() => {
-              if (github) {
+              if (deployment) {
+                window.open(deployment, "_blank");
+              } else if (github) {
                 window.open(github, "_blank");
               }
             }}>
-            <img src={image} ref={imgRef} alt="Project image" width={"100%"} />
+            <img src={image} ref={imgRef} alt={description} width={"100%"} />
           </main>
           <footer className="p-2">
             <p
@@ -75,11 +76,13 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
             <main
               className={`${github ? "cursor-pointer" : ""} w-1/2`}
               onClick={() => {
-                if (github) {
+                if (deployment) {
+                  window.open(deployment, "_blank");
+                } else if (github) {
                   window.open(github, "_blank");
                 }
               }}>
-              <img src={image} alt="Project image" width={"100%"} />
+              <img src={image} alt={description} width={"100%"} />
             </main>
             <footer className="w-1/2 p-2 pt-0">
               <p

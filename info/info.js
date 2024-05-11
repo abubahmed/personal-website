@@ -4,7 +4,7 @@ export const projects = [
     description:
       "Instagram website clone built using React.js, Firebase (Firestore, Authentication, Storage), and TailwindCSS.",
     github: "https://github.com/adb8/instagram-clone",
-    image: "instagram-clone.png",
+    image: "demo/instagram-clone.png",
     created: "04/2024",
   },
   {
@@ -23,7 +23,7 @@ export const projects = [
     ],
     github: "https://github.com/adb8/impact-hacks/",
     deployment: "https://impacthacks.xyz/",
-    image: "impact-hacks.png",
+    image: "demo/impact-hacks.png",
     created: "08/2023",
   },
   {
@@ -32,7 +32,7 @@ export const projects = [
       "Fullstack web app for tracking and managing student finances built using Next.js, MongoDB, Google OAuth, TailwindCSS, and Chart.js. Deployed using Vercel.",
     github: "https://github.com/adb8/EduWallet/",
     deployment: "https://eduwallet.vercel.app/",
-    image: "EduWallet.png",
+    image: "demo/EduWallet.png",
     created: "07/2023",
   },
   {
@@ -47,7 +47,7 @@ export const projects = [
     ],
     github: "https://github.com/adb8/UniForMe",
     deployment: "https://uniforme.onrender.com/",
-    image: "UniForMe.png",
+    image: "demo/UniForMe.png",
     created: "04/2023",
   },
   {
@@ -55,7 +55,7 @@ export const projects = [
     description:
       "Scraping and analysis of ~500,000 Reddit posts using PRAW (Python Reddit API Wrapper), Pandas, Matplotlib, Latent Dirichlet Allocation, Wordcloud, and Vader Sentiment Analysis.",
     github: "https://github.com/adb8/reddit-mining-analysis",
-    image: "reddit-mining-and-analysis.png",
+    image: "demo/reddit-mining-and-analysis.png",
     created: "04/2024",
   },
   {
@@ -63,7 +63,7 @@ export const projects = [
     description:
       "Analysis of customer service tweets from six major banks using Pandas, Matplotlib, Latent Dirichlet Allocation, and Vader Sentiment Analysis. Made during Aptitude's AI Pre-Internship.",
     github: "https://github.com/adb8/twitter-CS-analysis/",
-    image: "twitter-customer-service-analysis.png",
+    image: "demo/twitter-customer-service-analysis.png",
     created: "07/2023",
   },
   {
@@ -77,7 +77,7 @@ export const projects = [
       },
     ],
     github: "https://github.com/adb8/DigestiCare/",
-    image: "DigestiCare.png",
+    image: "demo/DigestiCare.png",
     created: "03/2024",
   },
   {
@@ -95,11 +95,11 @@ export const projects = [
       },
       {
         text: "OpenAI API",
-        link: "https://openai.com/api"
-      }
+        link: "https://openai.com/api",
+      },
     ],
     github: "https://github.com/adb8/MyHealth/",
-    image: "MyHealth.png",
+    image: "demo/MyHealth.png",
     created: "03/2024",
   },
   {
@@ -109,18 +109,18 @@ export const projects = [
     hyperlinks: [
       {
         text: "OpenAI API",
-        link: "https://openai.com/api"
-      }
+        link: "https://openai.com/api",
+      },
     ],
     github: "https://github.com/adb8/vulnerability-classifier",
-    image: "vulnerability-classifier.png",
+    image: "demo/vulnerability-classifier.png",
     created: "07/2023",
   },
   {
     title: "NoteStack",
     description:
       "Fullstack web app for creating and sharing lightweight notes built MERN stack (MongoDB, Express.js, React.js, Node.js).",
-    image: "NoteStack.png",
+    image: "demo/NoteStack.png",
     github: "https://github.com/adb8/NoteStack/",
     created: "11/2023",
   },
@@ -129,17 +129,12 @@ export const projects = [
     description:
       "Bank account management system with login, deposit, withdrawal, transfer, account creation/modification/deletion features built using C and a file system database.",
     github: "https://github.com/adb8/bank-management-system/",
-    image: "bank-management-system.png",
+    image: "demo/bank-management-system.png",
     created: "05/2024",
   },
 ];
 
 export const socials = [
-  {
-    name: "Devpost",
-    icon: "https://www.iconarchive.com/download/i149551/simpleicons-team/simple/devpost.1024.png",
-    link: "https://devpost.com/abuahmed0821",
-  },
   {
     name: "Github",
     icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
@@ -150,14 +145,9 @@ export const socials = [
     icon: "https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png",
     link: "https://www.linkedin.com/in/abu-ahmed-b5469b249/",
   },
-  {
-    name: "leetcode",
-    icon: "https://www.svgrepo.com/show/341985/leetcode.svg",
-    link: "https://leetcode.com/u/adb8/",
-  },
 ];
 
 export const email = "abuahmed0821@gmail.com";
 export const name = "Abu Ahmed";
 export const about =
-  "I'm a CS major interested in website/mobile app development, machine learning, and data analysis. I'm most proficient in Python and JS and I like to work on personal projects and compete in hackathons in my free time. Feel free to learn more about me through my socials or my projects!";
+  "I'm an incoming CS major interested in website/mobile app development, machine learning, and data analysis. I'm currently a senior at The Bronx High School of Science in NYC and I like to work on personal projects and compete in hackathons in my free time. Feel free to learn more about me through my socials or my projects!";
