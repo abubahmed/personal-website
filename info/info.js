@@ -147,7 +147,8 @@ export const socials = [
   },
 ];
 
-export const email = "abuahmed0821@gmail.com";
+export const email = "abuah0821@gmail.com";
 export const name = "Abu Ahmed";
 export const about =
   "I'm an incoming CS major interested in website/mobile app development, machine learning, and data analysis. I'm currently a senior at The Bronx High School of Science in NYC and I like to work on personal projects and compete in hackathons in my free time. Feel free to learn more about me through my socials or my projects!";
+export const resume = "https://drive.google.com/file/d/1TsO2bZnbXck59F1MksxQ5VWSptjQY5wo/view?usp=sharing";

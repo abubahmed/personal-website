@@ -1,6 +1,6 @@
 import React from "react";
 import { JetBrains_Mono } from "next/font/google";
-import { socials, email } from "../info/info";
+import { socials, email, resume } from "../info/info";
 import Social from "./Social";
 const jetbrainsExtralight = JetBrains_Mono({ subsets: ["latin"], weight: "200" });
 const jetbrainsLight = JetBrains_Mono({ subsets: ["latin"], weight: "300" });
@@ -18,7 +18,7 @@ const Socials = () => {
       </p>
       <p
         className={`${jetbrainsExtralight.className} cursor-pointer underline text-md text-center md:text-left mb-3`}>
-        <a href="/Abu Ahmed - Resume.pdf" target="_blank">See my resume</a>
+        <a href={resume} target="_blank">See my resume</a>
       </p>
       <div className="mx-auto flex justify-center md:block md:mx-0">
         <div className="flex">
