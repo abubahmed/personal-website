@@ -10,15 +10,11 @@ export const projects = [
   {
     title: "Impact Hacks",
     description:
-      "Landing website for the Impact Hacks hackathon (150+ participants, hosted on Devpost) built using Next.js. and TailwindCSS. Deployed using Vercel and hosted at impacthacks.xyz.",
+      "Landing website for the Impact Hacks hackathon (150+ participants, hosted on Devpost) built using Next.js. and TailwindCSS. Deployed using Vercel.",
     hyperlinks: [
       {
         text: "Impact Hacks hackathon",
         link: "https://impact-hacks-2023.devpost.com/",
-      },
-      {
-        text: "impacthacks.xyz",
-        link: "https://impacthacks.xyz/",
       },
     ],
     github: "https://github.com/adb8/impact-hacks/",
@@ -29,7 +25,7 @@ export const projects = [
   {
     title: "EduWallet",
     description:
-      "Fullstack web app for tracking and managing student finances built using Next.js, MongoDB, Google OAuth, TailwindCSS, and Chart.js. Deployed using Vercel.",
+      "Fullstack web app for managing student finances built using Next.js, MongoDB, Google OAuth, TailwindCSS, and Chart.js. Deployed using Vercel.",
     github: "https://github.com/adb8/EduWallet/",
     deployment: "https://eduwallet.vercel.app/",
     image: "demo/EduWallet.png",
@@ -38,10 +34,10 @@ export const projects = [
   {
     title: "UniForMe",
     description:
-      "Fullstack web app for choosing colleges to apply to built using Express.js, Firebase (Realtime Database), HTML, CSS, JS, Chart.js, and US Dep. of Edu. College Scorecard API. Deployed using Render.",
+      "Fullstack web app for choosing colleges to apply to built using Express.js, Firebase (Realtime Database), HTML, CSS, JS, Chart.js, and USDE College Scorecard API. Deployed using Render.",
     hyperlinks: [
       {
-        text: "US Dep. of Edu. College Scorecard API",
+        text: "USDE College Scorecard API",
         link: "https://collegescorecard.ed.gov/data/documentation/",
       },
     ],
@@ -53,7 +49,7 @@ export const projects = [
   {
     title: "Reddit mining and analysis",
     description:
-      "Scraping and analysis of ~500,000 Reddit posts using PRAW (Python Reddit API Wrapper), Pandas, Matplotlib, Latent Dirichlet Allocation, Wordcloud, and Vader Sentiment Analysis.",
+      "Scraping and analysis of ~500,000 Reddit posts built using PRAW, Pandas, Matplotlib, LDA, Wordcloud, and Vader Sentiment Analysis.",
     github: "https://github.com/adb8/reddit-mining-analysis",
     image: "demo/reddit-mining-and-analysis.png",
     created: "04/2024",
@@ -61,7 +57,7 @@ export const projects = [
   {
     title: "Twitter customer service analysis",
     description:
-      "Analysis of customer service tweets from six major banks using Pandas, Matplotlib, Latent Dirichlet Allocation, and Vader Sentiment Analysis. Made during Aptitude's AI Pre-Internship.",
+      "Analysis of customer service tweets from six banks built using Pandas, Matplotlib, LDA, and Vader Sentiment Analysis. Made during Aptitude's AI Pre-Internship.",
     github: "https://github.com/adb8/twitter-CS-analysis/",
     image: "demo/twitter-customer-service-analysis.png",
     created: "07/2023",
@@ -69,7 +65,7 @@ export const projects = [
   {
     title: "DigestiCare",
     description:
-      "Mobile app designed to help IBD sufferers realize their trigger foods. Built using React Native (Expo), MongoDB, Express.js, Puppeteer, and Edamam Food API. Won 1st place at Google Play's & All Star Code's TEI 2024.",
+      "Mobile app to help IBD sufferers realize their trigger foods. Built using React Native (Expo), MongoDB, Express.js, Puppeteer, and Edamam Food API. Won 1st place at Google Play's & All Star Code's TEI 2024.",
     hyperlinks: [
       {
         text: "Edamam Food API",
@@ -83,10 +79,10 @@ export const projects = [
   {
     title: "MyHealth",
     description:
-      "Mobile app for speaking to your doctor, finding hospitals, managing appointments, and receiving AI-powered health screenings. Built using React Native (Expo), MongoDB, Express.js, OpenAI API, and Community Benefit Insight's hospital API. Won 1st place at Bronx Science's AtomHacks 2024.",
+      "Mobile app for speaking to your doctor, finding hospitals, managing appointments, and receiving AI-powered health screenings. Built using React Native (Expo), MongoDB, Express.js, OpenAI API, and CBI's hospital API. Won 1st place at Bronx Science's AtomHacks 2024.",
     hyperlinks: [
       {
-        text: "Community Benefit Insight's hospital API",
+        text: "CBI's hospital API",
         link: "https://www.communitybenefitinsight.org/?page=info.data_api",
       },
       {
@@ -105,7 +101,7 @@ export const projects = [
   {
     title: "Vulnerability classifier",
     description:
-      "Machine learning models to classify insecure code snippets (poor input validation) built using Pandas, Tensorflow, and scikit-learn. Harvested training data using OpenAI API. Achieved 90%+ overall accuracy. Made as a part of a ML research project.",
+      "MLMs to classify poor input validation built using Pandas, Tensorflow, and scikit-learn. Harvested training data using OpenAI API. Achieved 90%+ overall accuracy. Made as a part of a ML research project.",
     hyperlinks: [
       {
         text: "OpenAI API",
@@ -119,7 +115,7 @@ export const projects = [
   {
     title: "NoteStack",
     description:
-      "Fullstack web app for creating and sharing lightweight notes built MERN stack (MongoDB, Express.js, React.js, Node.js).",
+      "Fullstack web app for creating and sharing lightweight notes built using MongoDB, Express.js, React.js, Node.js.",
     image: "demo/NoteStack.png",
     github: "https://github.com/adb8/NoteStack/",
     created: "11/2023",
@@ -127,7 +123,7 @@ export const projects = [
   {
     title: "Bank management system",
     description:
-      "Bank account management system with login, deposit, withdrawal, transfer, account creation/modification/deletion features built using C and a file system database.",
+      "Bank management system with login, deposit, withdrawal, transfer, account creation/modification/deletion features built using C.",
     github: "https://github.com/adb8/bank-management-system/",
     image: "demo/bank-management-system.png",
     created: "05/2024",
