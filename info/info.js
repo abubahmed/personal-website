@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Instagram clone (incomplete)",
     description:
-      "Instagram website clone built using React.js, Firebase (Firestore, Authentication, Storage), and TailwindCSS.",
+      "Instagram website clone (incomplete) built using React.js, Firebase (Firestore, Authentication, Storage), and TailwindCSS.",
     github: "https://github.com/adb8/instagram-clone",
     image: "demo/instagram-clone.png",
     created: "04/2024",
