@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 const App = () => {
   return (
-    <div className="w-full px-12 overflow-auto">
+    <div className="w-full lg:px-24 px-8 overflow-auto">
       <Navbar />
       <Hero />
       <div className="flex lg:flex-row lg:mb-10 lg:gap-16 flex-col">
