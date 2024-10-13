@@ -1,8 +1,8 @@
 export const projects = [
   {
-    title: "Instagram clone (incomplete)",
+    title: "Instagram clone (WIP)",
     description:
-      "Instagram website clone (incomplete) built using React.js, Firebase (Firestore, Authentication, Storage), and TailwindCSS.",
+      "(WIP) Instagram website clone built using React.js, Firebase (Firestore, Authentication, Storage), and TailwindCSS.",
     github: "https://github.com/adb8/instagram-clone",
     image: "demo/instagram-clone.png",
     created: "04/2024",
@@ -18,7 +18,7 @@ export const projects = [
       },
     ],
     github: "https://github.com/adb8/impact-hacks/",
-    deployment: "https://impacthacks.xyz/",
+    deployment: "https://impact-hacks.vercel.app/",
     image: "demo/impact-hacks.png",
     created: "08/2023",
   },
@@ -47,7 +47,7 @@ export const projects = [
     created: "04/2023",
   },
   {
-    title: "Reddit mining and analysis",
+    title: "Reddit Mining and Analysis",
     description:
       "Scraping and analysis of ~500,000 Reddit posts built using PRAW, Pandas, Matplotlib, LDA, Wordcloud, and Vader Sentiment Analysis.",
     github: "https://github.com/adb8/reddit-mining-analysis",
@@ -55,7 +55,7 @@ export const projects = [
     created: "04/2024",
   },
   {
-    title: "Twitter customer service analysis",
+    title: "Twitter Customer Service Analysis",
     description:
       "Analysis of customer service tweets from six banks built using Pandas, Matplotlib, LDA, and Vader Sentiment Analysis. Made during Aptitude's AI Pre-Internship.",
     github: "https://github.com/adb8/twitter-CS-analysis/",
@@ -99,7 +99,7 @@ export const projects = [
     created: "03/2024",
   },
   {
-    title: "Vulnerability classifier",
+    title: "Vulnerability Classifier",
     description:
       "MLMs to classify poor input validation built using Pandas, Tensorflow, and scikit-learn. Harvested training data using OpenAI API. Achieved 90%+ overall accuracy. Made as a part of a ML research project.",
     hyperlinks: [
@@ -120,14 +120,14 @@ export const projects = [
     github: "https://github.com/adb8/NoteStack/",
     created: "11/2023",
   },
-  {
-    title: "Bank management system",
-    description:
-      "Bank management system with login, deposit, withdrawal, transfer, account creation/modification/deletion features built using C.",
-    github: "https://github.com/adb8/bank-management-system/",
-    image: "demo/bank-management-system.png",
-    created: "05/2024",
-  },
+  // {
+  //   title: "Bank management system",
+  //   description:
+  //     "Bank management system with login, deposit, withdrawal, transfer, account creation/modification/deletion features built using C.",
+  //   github: "https://github.com/adb8/bank-management-system/",
+  //   image: "demo/bank-management-system.png",
+  //   created: "05/2024",
+  // },
 ];
 
 export const socials = [
@@ -143,8 +143,4 @@ export const socials = [
   },
 ];
 
-export const email = "abuah0821@gmail.com";
-export const name = "Abu Ahmed";
-export const about =
-  "I'm an incoming CS major interested in website/mobile app development, machine learning, and data analysis. I'm currently a senior at The Bronx High School of Science in NYC and I like to work on personal projects and compete in hackathons in my free time. Feel free to learn more about me through my socials or my projects!";
 export const resume = "https://drive.google.com/file/d/1TsO2bZnbXck59F1MksxQ5VWSptjQY5wo/view?usp=sharing";

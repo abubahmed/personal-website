@@ -1,19 +1,17 @@
 import React from "react";
-import { JetBrains_Mono } from "next/font/google";
-const jetbrainsLight = JetBrains_Mono({ subsets: ["latin"], weight: "300" });
-const jetbrainsExtralight = JetBrains_Mono({ subsets: ["latin"], weight: "200" });
+import { navbarFont } from "@/styles/fonts";
 
 const Navbar = () => {
   return (
-    <ul className="flex max-w-[350px] justify-between mx-auto md:ml-auto md:mr-0 mt-6">
-      <li className={`${jetbrainsLight.className} cursor-pointer hover:underline text-md`}>
-        <a href="#about">about</a>
+    <ul className="flex max-w-[220px] justify-between mx-auto md:ml-auto md:mr-0 mt-6">
+      <li className={`${navbarFont.className} cursor-pointer hover:underline underline text-base`}>
+        <a href="#about">About</a>
       </li>
-      <li className={`${jetbrainsLight.className} cursor-pointer hover:underline text-md`}>
-        <a href="#socials">socials</a>
+      <li className={`${navbarFont.className} cursor-pointer hover:underline underline text-base`}>
+        <a href="#socials">Socials</a>
       </li>
-      <li className={`${jetbrainsLight.className} cursor-pointer hover:underline text-md`}>
-        <a href="#projects">projects</a>
+      <li className={`${navbarFont.className} cursor-pointer hover:underline underline text-base`}>
+        <a href="#projects">Projects</a>
       </li>
     </ul>
   );

@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { JetBrains_Mono } from "next/font/google";
-const jetbrainsExtralight = JetBrains_Mono({ subsets: ["latin"], weight: "200" });
-const jetbrainsLight = JetBrains_Mono({ subsets: ["latin"], weight: "300" });
+import { contentFont, cardheaderFont } from "@/styles/fonts";
 
 const ProjectCard = ({ title, description, github, deployment, demo, image, hyperlinks }) => {
   const [imageOrientation, setImageOrientation] = useState(null);
@@ -46,7 +44,7 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
   };
 
   return (
-    <div className={`${jetbrainsExtralight.className} text-sm bg-gray-200`}>
+    <div className={`${contentFont.className} text-sm bg-gray-200 rounded-md overflow-hidden`}>
       {imageOrientation && imageOrientation != "horizontal" && (
         <div>
           <Header title={title} github={github} deployment={deployment} demo={demo} />
@@ -61,12 +59,11 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
             }}>
             <img src={image} ref={imgRef} alt={description} width={"100%"} />
           </main>
-          <footer className="p-2">
-            <p
-              dangerouslySetInnerHTML={{
-                __html: hyperlinks ? createHyperLinks(description, hyperlinks) : description,
-              }}></p>
-          </footer>
+          <div
+            className="text-md p-2 px-3 text-[15px]"
+            dangerouslySetInnerHTML={{
+              __html: hyperlinks ? createHyperLinks(description, hyperlinks) : description,
+            }}></div>
         </div>
       )}
       {imageOrientation && imageOrientation === "horizontal" && (
@@ -74,7 +71,7 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
           <Header title={title} github={github} deployment={deployment} demo={demo} />
           <div className="flex">
             <main
-              className={`${github ? "cursor-pointer" : ""} w-1/2`}
+              className={`${github ? "cursor-pointer" : ""} w-[40%]`}
               onClick={() => {
                 if (deployment) {
                   window.open(deployment, "_blank");
@@ -84,12 +81,11 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
               }}>
               <img src={image} alt={description} width={"100%"} />
             </main>
-            <footer className="w-1/2 p-2 pt-0">
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: hyperlinks ? createHyperLinks(description, hyperlinks) : description,
-                }}></p>
-            </footer>
+            <div
+              className="w-[60%] p-2 px-3 text-[15px]"
+              dangerouslySetInnerHTML={{
+                __html: hyperlinks ? createHyperLinks(description, hyperlinks) : description,
+              }}></div>
           </div>
         </div>
       )}
@@ -99,8 +95,8 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
 
 const Header = ({ github, deployment, demo, title }) => {
   return (
-    <header className={`flex justify-between p-2`}>
-      <p className={`${jetbrainsLight.className}`}>{title}</p>
+    <header className={`flex justify-between p-2 px-3 text-base`}>
+      <p className={`${cardheaderFont.className} text-md`}>{title}</p>
       <div className="flex items-center">
         {github && (
           <a target="_blank" className="underline" href={github}>

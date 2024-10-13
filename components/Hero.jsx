@@ -1,10 +1,9 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
-import { JetBrains_Mono } from "next/font/google";
-import { name } from "../info/info";
-const jetbrainsMedium = JetBrains_Mono({ subsets: ["latin"], weight: "500" });
+import { headerFont } from "@/styles/fonts";
+
 const TEXTS = [
-  `${name.split(" ")[0]}!`,
+  "Abu!",
   "a programmer!",
   "a student!",
   "an engineer!",
@@ -13,7 +12,7 @@ const TEXTS = [
 
 const Hero = () => {
   return (
-    <h1 className={`${jetbrainsMedium.className} text-xl my-6 text-center md:text-left`}>
+    <h1 className={`${headerFont.className} text-3xl my-12 md:text-left text-center`}>
       Hi, I'm&nbsp;
       <ReactTyped strings={TEXTS} typeSpeed={70} backSpeed={80} loop />
     </h1>

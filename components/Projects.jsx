@@ -1,10 +1,9 @@
 import React from "react";
-import Masonry from "react-responsive-masonry";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { projects } from "../info/info";
 import ProjectCard from "./ProjectCard";
-import { JetBrains_Mono } from "next/font/google";
 import { useEffect, useState } from "react";
-const jetbrainsLight = JetBrains_Mono({ subsets: ["latin"], weight: "300" });
+import { subheaderFont } from "@/styles/fonts";
 
 const Projects = () => {
   const [columnsCount, setColumnsCount] = useState(4);
@@ -28,19 +27,21 @@ const Projects = () => {
   }, []);
 
   return (
-    <div id="projects" className="mb-6 text-center md:text-left">
-      <p className={`${jetbrainsLight.className} text-lg mb-4 underline`}>projects</p>
-      <Masonry gutter="24px" columnsCount={columnsCount}>
-        {[...projects]
-          .sort((a, b) => {
-            const aDate = a.created.split("/").reverse().join("");
-            const bDate = b.created.split("/").reverse().join("");
-            return bDate.localeCompare(aDate);
-          })
-          .map((project) => (
-            <ProjectCard {...project} key={project.title} className="m-0" />
-          ))}
-      </Masonry>
+    <div id="projects" className="my-8 text-center md:text-left">
+      <p className={`${subheaderFont.className} text-lg mb-6 underline`}>Projects</p>
+      <ResponsiveMasonry>
+        <Masonry gutter="36px" columnsCount={columnsCount}>
+          {[...projects]
+            .sort((a, b) => {
+              const aDate = a.created.split("/").reverse().join("");
+              const bDate = b.created.split("/").reverse().join("");
+              return bDate.localeCompare(aDate);
+            })
+            .map((project) => (
+              <ProjectCard {...project} key={project.title} className="m-0" />
+            ))}
+        </Masonry>
+      </ResponsiveMasonry>
     </div>
   );
 };

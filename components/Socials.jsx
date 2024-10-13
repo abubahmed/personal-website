@@ -1,23 +1,21 @@
 import React from "react";
-import { JetBrains_Mono } from "next/font/google";
-import { socials, email, resume } from "../info/info";
+import { socials, resume } from "../info/info";
 import Social from "./Social";
-const jetbrainsExtralight = JetBrains_Mono({ subsets: ["latin"], weight: "200" });
-const jetbrainsLight = JetBrains_Mono({ subsets: ["latin"], weight: "300" });
+import { contentFont, subheaderFont } from "@/styles/fonts";
 
 const Socials = () => {
   return (
-    <div id="socials" className="my-6">
-      <p className={`${jetbrainsLight.className} text-lg underline mb-2 text-center md:text-left`}>
-        more
+    <div id="socials">
+      <p className={`${subheaderFont.className} text-lg underline mb-3 text-center md:text-left`}>
+        Socials
       </p>
       <p
-        onClick={() => navigator.clipboard.writeText(email)}
-        className={`${jetbrainsExtralight.className} cursor-pointer underline text-md mb-1 text-center md:text-left`}>
-        {email}
+        onClick={() => navigator.clipboard.writeText("abuah0821@gmail.com")}
+        className={`${contentFont.className} cursor-pointer underline text-base mb-1 text-center md:text-left`}>
+        abuah0821@gmail.com
       </p>
       <p
-        className={`${jetbrainsExtralight.className} cursor-pointer underline text-md text-center md:text-left mb-3`}>
+        className={`${contentFont.className} cursor-pointer underline text-base text-center md:text-left mb-4`}>
         <a href={resume} target="_blank">See my resume</a>
       </p>
       <div className="mx-auto flex justify-center md:block md:mx-0">
