@@ -17,12 +17,7 @@ const Hero = () => {
       }}>
       <span style={{ direction: "ltr", display: "inline-block" }}>
         Hi, I'm&nbsp;
-        <ReactTyped
-          strings={TEXTS}
-          typeSpeed={70}
-          backSpeed={80}
-          loop
-        />
+        <ReactTyped strings={TEXTS} typeSpeed={70} backSpeed={80} loop />
       </span>
     </h1>
   );

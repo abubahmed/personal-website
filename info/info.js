@@ -129,6 +129,3 @@ export const projects = [
     created: "05/2024",
   },
 ];
-
-export const resume =
-  "https://drive.google.com/file/d/1TsO2bZnbXck59F1MksxQ5VWSptjQY5wo/view?usp=sharing";

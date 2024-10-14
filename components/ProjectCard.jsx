@@ -60,15 +60,7 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
                 window.open(github, "_blank");
               }
             }}>
-            {image && (
-              <img
-                src={image}
-                ref={imgRef}
-                alt={description}
-                width={"100%"}
-                className="blue-tint"
-              />
-            )}
+            {image && <img src={image} ref={imgRef} alt={description} width={"100%"} />}
           </main>
           <div className="text-md p-6 text-base">
             <div className={`${subheaderFont.className} mb-3 text-xl`}>{title}</div>
@@ -134,14 +126,14 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
                 )}
                 {deployment && (
                   <strong>
-                    <a className="text-blue-400 hover:underline" href={github}>
+                    <a className="text-blue-400 hover:underline" href={deployment}>
                       DEPLOYMENT
                     </a>
                   </strong>
                 )}
                 {demo && (
                   <strong>
-                    <a className="text-blue-400 hover:underline" href={github}>
+                    <a className="text-blue-400 hover:underline" href={demo}>
                       DEMO
                     </a>
                   </strong>

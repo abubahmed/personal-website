@@ -3,15 +3,18 @@ import { navbarFont } from "@/styles/fonts";
 
 const Navbar = () => {
   return (
-    <ul className="flex max-w-[220px] justify-between ml-auto mr-0 mt-6">
-      <li className={`${navbarFont.className} cursor-pointer text-base hover:underline transition duration-300`}>
-        <a href="#about">About</a>
+    <ul className="flex max-w-[280px] justify-between ml-auto mr-0 mt-6">
+      <li
+        className={`${navbarFont.className} cursor-pointer text-md hover:text-gray-300 transition duration-300`}>
+        <a href="#about">ABOUT</a>
       </li>
-      <li className={`${navbarFont.className} cursor-pointer text-base hover:underline transition duration-300`}>
-        <a href="#socials">Socials</a>
+      <li
+        className={`${navbarFont.className} cursor-pointer text-md hover:text-gray-300 transition duration-300`}>
+        <a href="#socials">SOCIALS</a>
       </li>
-      <li className={`${navbarFont.className} cursor-pointer text-base hover:underline transition duration-300`}>
-        <a href="#projects">Projects</a>
+      <li
+        className={`${navbarFont.className} cursor-pointer text-md hover:text-gray-300 transition duration-300`}>
+        <a href="#projects">PROJECTS</a>
       </li>
     </ul>
   );
