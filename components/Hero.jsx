@@ -22,9 +22,6 @@ const Hero = () => {
           typeSpeed={70}
           backSpeed={80}
           loop
-          style={{
-            color: "rgb(96,165,250)",
-          }}
         />
       </span>
     </h1>
