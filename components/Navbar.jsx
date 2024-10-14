@@ -3,7 +3,7 @@ import { navbarFont } from "@/styles/fonts";
 
 const Navbar = () => {
   return (
-    <ul className="flex max-w-[220px] justify-between mx-auto md:ml-auto md:mr-0 mt-6">
+    <ul className="flex max-w-[220px] justify-between ml-auto mr-0 mt-6">
       <li className={`${navbarFont.className} cursor-pointer text-base hover:text-blue-400 transition duration-300`}>
         <a href="#about">About</a>
       </li>
