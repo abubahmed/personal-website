@@ -11,7 +11,7 @@ const App = () => {
     <div className="w-full lg:px-24 px-8 overflow-auto">
       <Navbar />
       <Hero />
-      <div className="flex lg:flex-row lg:mb-10 lg:gap-16 flex-col">
+      <div className="flex lg:flex-row lg:mb-10 lg:gap-20 flex-col">
         <About />
         <Socials />
       </div>

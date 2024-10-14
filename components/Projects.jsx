@@ -28,7 +28,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="my-8 text-center md:text-left">
-      <p className={`${subheaderFont.className} text-lg mb-6 underline`}>Projects</p>
+      <p className={`${subheaderFont.className} text-xl mb-6`}>Projects</p>
       <ResponsiveMasonry>
         <Masonry gutter="36px" columnsCount={columnsCount}>
           {[...projects]

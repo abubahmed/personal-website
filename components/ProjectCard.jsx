@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { contentFont, cardheaderFont } from "@/styles/fonts";
+import { contentFont, cardheaderFont, subheaderFont } from "@/styles/fonts";
 
 const ProjectCard = ({ title, description, github, deployment, demo, image, hyperlinks }) => {
   const [imageOrientation, setImageOrientation] = useState(null);
@@ -7,6 +7,10 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
   const imgRef = useRef(null);
 
   useEffect(() => {
+    if (!image) {
+      setImageOrientation("vertical");
+      setImageLoaded(true);
+    }
     const img = new Image();
     img.onload = () => {
       const height = img.naturalHeight;
@@ -26,7 +30,6 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
       setImageLoaded(true);
     }
   }, [imageOrientation]);
-
   if (!imageLoaded) {
     return null;
   }
@@ -44,10 +47,10 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
   };
 
   return (
-    <div className={`${contentFont.className} text-sm bg-gray-200 rounded-md overflow-hidden`}>
+    <div
+      className={`${contentFont.className} text-sm rounded-sm overflow-hidden text-left bg-[rgb(22,26,29)]`}>
       {imageOrientation && imageOrientation != "horizontal" && (
         <div>
-          <Header title={title} github={github} deployment={deployment} demo={demo} />
           <main
             className={`${github ? "cursor-pointer" : ""} w-full`}
             onClick={() => {
@@ -57,18 +60,51 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
                 window.open(github, "_blank");
               }
             }}>
-            <img src={image} ref={imgRef} alt={description} width={"100%"} />
+            {image && (
+              <img
+                src={image}
+                ref={imgRef}
+                alt={description}
+                width={"100%"}
+                className="blue-tint"
+              />
+            )}
           </main>
-          <div
-            className="text-md p-2 px-3 text-[15px]"
-            dangerouslySetInnerHTML={{
-              __html: hyperlinks ? createHyperLinks(description, hyperlinks) : description,
-            }}></div>
+          <div className="text-md p-6 text-base">
+            <div className={`${subheaderFont.className} mb-3 text-xl`}>{title}</div>
+            <div
+              className="mb-5"
+              dangerouslySetInnerHTML={{
+                __html: hyperlinks ? createHyperLinks(description, hyperlinks) : description,
+              }}></div>
+            <div className="text-[15px] flex flex-row gap-3">
+              {github && (
+                <strong>
+                  <a className="text-blue-300" href={github}>
+                    GITHUB
+                  </a>
+                </strong>
+              )}
+              {deployment && (
+                <strong>
+                  <a className="text-blue-300" href={github}>
+                    DEPLOYMENT
+                  </a>
+                </strong>
+              )}
+              {demo && (
+                <strong>
+                  <a className="text-blue-300" href={github}>
+                    DEMO
+                  </a>
+                </strong>
+              )}
+            </div>
+          </div>
         </div>
       )}
       {imageOrientation && imageOrientation === "horizontal" && (
         <div>
-          <Header title={title} github={github} deployment={deployment} demo={demo} />
           <div className="flex">
             <main
               className={`${github ? "cursor-pointer" : ""} w-[40%]`}
@@ -79,13 +115,39 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
                   window.open(github, "_blank");
                 }
               }}>
-              <img src={image} alt={description} width={"100%"} />
+              {image && <img src={image} alt={description} width={"100%"} className="blue-tint" />}
             </main>
-            <div
-              className="w-[60%] p-2 px-3 text-[15px]"
-              dangerouslySetInnerHTML={{
-                __html: hyperlinks ? createHyperLinks(description, hyperlinks) : description,
-              }}></div>
+            <div className="w-[60%] p-6 text-base">
+              <div className={`${subheaderFont.className} mb-3 text-xl`}>{title}</div>
+              <div
+                className="mb-5"
+                dangerouslySetInnerHTML={{
+                  __html: hyperlinks ? createHyperLinks(description, hyperlinks) : description,
+                }}></div>
+              <div className="text-[15px] flex flex-row gap-3">
+                {github && (
+                  <strong>
+                    <a className="text-blue-300" href={github}>
+                      GITHUB
+                    </a>
+                  </strong>
+                )}
+                {deployment && (
+                  <strong>
+                    <a className="text-blue-300" href={github}>
+                      DEPLOYMENT
+                    </a>
+                  </strong>
+                )}
+                {demo && (
+                  <strong>
+                    <a className="text-blue-300" href={github}>
+                      DEMO
+                    </a>
+                  </strong>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       )}

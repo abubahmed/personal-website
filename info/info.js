@@ -120,27 +120,15 @@ export const projects = [
     github: "https://github.com/adb8/NoteStack/",
     created: "11/2023",
   },
-  // {
-  //   title: "Bank management system",
-  //   description:
-  //     "Bank management system with login, deposit, withdrawal, transfer, account creation/modification/deletion features built using C.",
-  //   github: "https://github.com/adb8/bank-management-system/",
-  //   image: "demo/bank-management-system.png",
-  //   created: "05/2024",
-  // },
-];
-
-export const socials = [
   {
-    name: "Github",
-    icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
-    link: "https://github.com/adb8",
-  },
-  {
-    name: "LinkedIn",
-    icon: "https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png",
-    link: "https://www.linkedin.com/in/abu-ahmed-b5469b249/",
+    title: "Bank management system",
+    description:
+      "Bank management system with login, deposit, withdrawal, transfer, account creation/modification/deletion features built using C.",
+    github: "https://github.com/adb8/bank-management-system/",
+    image: "demo/bank-management-system.png",
+    created: "05/2024",
   },
 ];
 
-export const resume = "https://drive.google.com/file/d/1TsO2bZnbXck59F1MksxQ5VWSptjQY5wo/view?usp=sharing";
+export const resume =
+  "https://drive.google.com/file/d/1TsO2bZnbXck59F1MksxQ5VWSptjQY5wo/view?usp=sharing";
