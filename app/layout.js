@@ -11,6 +11,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY7LNR0RZK"></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-PY7LNR0RZK');
+        </script>
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>{children}</body>
