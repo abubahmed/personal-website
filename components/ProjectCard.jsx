@@ -48,7 +48,7 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
 
   return (
     <div
-      className={`${contentFont.className} text-sm rounded-sm overflow-hidden text-left bg-[rgb(22,26,29)]`}>
+      className={`${contentFont.className} text-sm rounded-sm overflow-hidden text-left bg-[rgb(22,26,29)] transition-transform transform hover:scale-105`}>
       {imageOrientation && imageOrientation != "horizontal" && (
         <div>
           <main
@@ -77,24 +77,24 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
               dangerouslySetInnerHTML={{
                 __html: hyperlinks ? createHyperLinks(description, hyperlinks) : description,
               }}></div>
-            <div className="text-[15px] flex flex-row gap-3">
+            <div className="text-base flex flex-row gap-4">
               {github && (
                 <strong>
-                  <a className="text-blue-300" href={github}>
+                  <a className="text-blue-400 hover:underline" href={github}>
                     GITHUB
                   </a>
                 </strong>
               )}
               {deployment && (
                 <strong>
-                  <a className="text-blue-300" href={github}>
+                  <a className="text-blue-400 hover:underline" href={github}>
                     DEPLOYMENT
                   </a>
                 </strong>
               )}
               {demo && (
                 <strong>
-                  <a className="text-blue-300" href={github}>
+                  <a className="text-blue-400 hover:underline" href={github}>
                     DEMO
                   </a>
                 </strong>
@@ -124,24 +124,24 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
                 dangerouslySetInnerHTML={{
                   __html: hyperlinks ? createHyperLinks(description, hyperlinks) : description,
                 }}></div>
-              <div className="text-[15px] flex flex-row gap-3">
+              <div className="text-base flex flex-row gap-4">
                 {github && (
                   <strong>
-                    <a className="text-blue-300" href={github}>
+                    <a className="text-blue-400 hover:underline" href={github}>
                       GITHUB
                     </a>
                   </strong>
                 )}
                 {deployment && (
                   <strong>
-                    <a className="text-blue-300" href={github}>
+                    <a className="text-blue-400 hover:underline" href={github}>
                       DEPLOYMENT
                     </a>
                   </strong>
                 )}
                 {demo && (
                   <strong>
-                    <a className="text-blue-300" href={github}>
+                    <a className="text-blue-400 hover:underline" href={github}>
                       DEMO
                     </a>
                   </strong>
@@ -152,46 +152,6 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
         </div>
       )}
     </div>
-  );
-};
-
-const Header = ({ github, deployment, demo, title }) => {
-  return (
-    <header className={`flex justify-between p-2 px-3 text-base`}>
-      <p className={`${cardheaderFont.className} text-md`}>{title}</p>
-      <div className="flex items-center">
-        {github && (
-          <a target="_blank" className="underline" href={github}>
-            <img
-              className="mx-[5px]"
-              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-              alt="Github repository"
-              width={18}
-            />
-          </a>
-        )}
-        {deployment && (
-          <a target="_blank" className="underline" href={deployment}>
-            <img
-              className="mx-[5px]"
-              src="https://cdn-icons-png.freepik.com/256/1006/1006771.png?semt=ais_hybrid"
-              alt="Deployment link"
-              width={18}
-            />
-          </a>
-        )}
-        {demo && (
-          <a target="_blank" className="underline" href={demo}>
-            <img
-              className="mx-[5px]"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/YouTube_dark_icon_%282017%29.svg/2560px-YouTube_dark_icon_%282017%29.svg.png"
-              alt="Demo link"
-              width={20}
-            />
-          </a>
-        )}
-      </div>
-    </header>
   );
 };
 

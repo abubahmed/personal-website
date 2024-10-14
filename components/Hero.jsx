@@ -7,7 +7,7 @@ const TEXTS = ["Abu!", "a programmer!", "a student!", "an engineer!", "a designe
 const Hero = () => {
   return (
     <h1
-      className={`${headerFont.className} text-2xl my-10 md:text-left text-center`}
+      className={`${headerFont.className} text-xl my-10 mb-6 md:text-left text-center`}
       style={{
         whiteSpace: "nowrap",
         overflow: "hidden",
@@ -17,7 +17,15 @@ const Hero = () => {
       }}>
       <span style={{ direction: "ltr", display: "inline-block" }}>
         Hi, I'm&nbsp;
-        <ReactTyped strings={TEXTS} typeSpeed={70} backSpeed={80} loop />
+        <ReactTyped
+          strings={TEXTS}
+          typeSpeed={70}
+          backSpeed={80}
+          loop
+          style={{
+            color: "rgb(96,165,250)",
+          }}
+        />
       </span>
     </h1>
   );
