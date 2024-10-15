@@ -63,7 +63,7 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
             {image && <img src={image} ref={imgRef} alt={description} width={"100%"} />}
           </main>
           <div className="text-md p-6 text-base">
-            <div className={`${subheaderFont.className} mb-3 text-xl`}>{title}</div>
+            <div className={`${subheaderFont.className} mb-3 text-lg`}>{title}</div>
             <div
               className="mb-5"
               dangerouslySetInnerHTML={{
@@ -110,7 +110,7 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
               {image && <img src={image} alt={description} width={"100%"} className="blue-tint" />}
             </main>
             <div className="w-[60%] p-6 text-base">
-              <div className={`${subheaderFont.className} mb-3 text-xl`}>{title}</div>
+              <div className={`${subheaderFont.className} mb-3 text-lg`}>{title}</div>
               <div
                 className="mb-5"
                 dangerouslySetInnerHTML={{

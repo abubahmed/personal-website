@@ -4,7 +4,7 @@ import { contentFont } from "@/styles/fonts";
 const Footer = () => {
   return (
     <footer className={`mb-6 ${contentFont.className}`}>
-      <div className="container mx-auto text-center flex justify-center text-md">
+      <div className="container mx-auto text-center flex justify-center text-sm">
         <p>
           &copy; {new Date().getFullYear()} Abu Ahmed. All rights reserved. Built with{" "}
           <a
