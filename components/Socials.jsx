@@ -13,7 +13,7 @@ const Socials = () => {
         <p
           onClick={() => navigator.clipboard.writeText("abuah0821@gmail.com")}
           className={`${contentFont.className} cursor-pointer text-base text-left hover:underline`}>
-          abuah0821@gmail.com
+          abuahmed0821@gmail.com
         </p>
         <MdOutlineContentCopy
           onClick={() => navigator.clipboard.writeText("abuah0821@gmail.com")}
