@@ -48,7 +48,7 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
 
   return (
     <div
-      className={`${contentFont.className} text-sm rounded-sm overflow-hidden text-left bg-[rgb(22,26,29)] transition-transform transform hover:scale-105`}>
+      className={`${contentFont.className} text-sm rounded-sm overflow-hidden text-left project-card transition-transform transform hover:scale-105`}>
       {imageOrientation && imageOrientation != "horizontal" && (
         <div>
           <main
