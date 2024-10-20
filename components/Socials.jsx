@@ -11,12 +11,12 @@ const Socials = () => {
       <p className={`${subheaderFont.className} text-xl mb-3 text-left`}>Socials</p>
       <div className="flex gap-2 items-center mb-4">
         <p
-          onClick={() => navigator.clipboard.writeText("abuah0821@gmail.com")}
+          onClick={() => navigator.clipboard.writeText("abuahmed0821@gmail.com")}
           className={`${contentFont.className} cursor-pointer text-base text-left hover:underline`}>
           abuahmed0821@gmail.com
         </p>
         <MdOutlineContentCopy
-          onClick={() => navigator.clipboard.writeText("abuah0821@gmail.com")}
+          onClick={() => navigator.clipboard.writeText("abuahmed0821@gmail.com")}
           size={16}
           className="cursor-pointer"
         />
