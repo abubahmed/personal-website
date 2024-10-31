@@ -4,7 +4,7 @@ export const projects = [
     description:
       "Instagram website clone built using React.js, Firebase (Firestore, Authentication, Storage), and TailwindCSS.",
     github: "https://github.com/adb8/instagram-clone",
-    image: "demo/instagram-clone.png",
+    image: "projects/instagram-clone.png",
     created: "04/2024",
   },
   {
@@ -19,7 +19,7 @@ export const projects = [
     ],
     github: "https://github.com/adb8/impact-hacks/",
     deployment: "https://impact-hacks.vercel.app/",
-    image: "demo/impact-hacks.png",
+    image: "projects/impact-hacks.png",
     created: "08/2023",
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
       "Fullstack web app for managing student finances built using Next.js, MongoDB, Google OAuth, TailwindCSS, and Chart.js. Deployed using Vercel.",
     github: "https://github.com/adb8/eduwallet/",
     deployment: "https://eduwallet.vercel.app/",
-    image: "demo/eduwallet.png",
+    image: "projects/eduwallet.png",
     created: "07/2023",
   },
   {
@@ -43,7 +43,7 @@ export const projects = [
     ],
     github: "https://github.com/adb8/uniforme",
     deployment: "https://uniforme.onrender.com/",
-    image: "demo/uniforme.png",
+    image: "projects/uniforme.png",
     created: "04/2023",
   },
   {
@@ -51,7 +51,7 @@ export const projects = [
     description:
       "Scraping and analysis of ~500,000 Reddit posts built using PRAW, Pandas, Matplotlib, LDA, Wordcloud, and Vader Sentiment Analysis.",
     github: "https://github.com/adb8/reddit-mining-analysis",
-    image: "demo/reddit-mining-analysis.png",
+    image: "projects/reddit-mining-analysis.png",
     created: "04/2024",
   },
   {
@@ -59,7 +59,7 @@ export const projects = [
     description:
       "Analysis of customer service tweets from six banks built using Pandas, Matplotlib, LDA, and Vader Sentiment Analysis. Made during Aptitude's AI Pre-Internship.",
     github: "https://github.com/adb8/twitter-CS-analysis/",
-    image: "demo/twitter-CS-analysis.png",
+    image: "projects/twitter-CS-analysis.png",
     created: "07/2023",
   },
   {
@@ -73,7 +73,7 @@ export const projects = [
       },
     ],
     github: "https://github.com/adb8/digesticare/",
-    image: "demo/digesticare.png",
+    image: "projects/digesticare.png",
     created: "03/2024",
   },
   {
@@ -95,7 +95,7 @@ export const projects = [
       },
     ],
     github: "https://github.com/adb8/myhealth/",
-    image: "demo/myhealth.png",
+    image: "projects/myhealth.png",
     created: "03/2024",
   },
   {
@@ -109,14 +109,14 @@ export const projects = [
       },
     ],
     github: "https://github.com/adb8/insecure-code-classifier",
-    image: "demo/insecure-code-classifier.png",
+    image: "projects/insecure-code-classifier.png",
     created: "07/2023",
   },
   {
     title: "NoteStack",
     description:
       "Fullstack web app for creating and sharing lightweight notes built using MongoDB, Express.js, React.js, Node.js.",
-    image: "demo/notestack.png",
+    image: "projects/notestack.png",
     github: "https://github.com/adb8/notestack/",
     created: "11/2023",
   },
@@ -125,7 +125,7 @@ export const projects = [
     description:
       "Bank management system with login, deposit, withdrawal, transfer, account creation/modification/deletion features built using C.",
     github: "https://github.com/adb8/bank-management-system/",
-    image: "demo/bank-management-system.png",
+    image: "projects/bank-management-system.png",
     created: "05/2024",
   },
 ];
