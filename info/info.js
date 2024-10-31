@@ -26,9 +26,9 @@ export const projects = [
     title: "EduWallet",
     description:
       "Fullstack web app for managing student finances built using Next.js, MongoDB, Google OAuth, TailwindCSS, and Chart.js. Deployed using Vercel.",
-    github: "https://github.com/adb8/EduWallet/",
+    github: "https://github.com/adb8/eduwallet/",
     deployment: "https://eduwallet.vercel.app/",
-    image: "demo/EduWallet.png",
+    image: "demo/eduwallet.png",
     created: "07/2023",
   },
   {
@@ -41,9 +41,9 @@ export const projects = [
         link: "https://collegescorecard.ed.gov/data/documentation/",
       },
     ],
-    github: "https://github.com/adb8/UniForMe",
+    github: "https://github.com/adb8/uniforme",
     deployment: "https://uniforme.onrender.com/",
-    image: "demo/UniForMe.png",
+    image: "demo/uniforme.png",
     created: "04/2023",
   },
   {
@@ -51,7 +51,7 @@ export const projects = [
     description:
       "Scraping and analysis of ~500,000 Reddit posts built using PRAW, Pandas, Matplotlib, LDA, Wordcloud, and Vader Sentiment Analysis.",
     github: "https://github.com/adb8/reddit-mining-analysis",
-    image: "demo/reddit-mining-and-analysis.png",
+    image: "demo/reddit-mining-analysis.png",
     created: "04/2024",
   },
   {
@@ -59,7 +59,7 @@ export const projects = [
     description:
       "Analysis of customer service tweets from six banks built using Pandas, Matplotlib, LDA, and Vader Sentiment Analysis. Made during Aptitude's AI Pre-Internship.",
     github: "https://github.com/adb8/twitter-CS-analysis/",
-    image: "demo/twitter-customer-service-analysis.png",
+    image: "demo/twitter-CS-analysis.png",
     created: "07/2023",
   },
   {
@@ -72,8 +72,8 @@ export const projects = [
         link: "https://developer.edamam.com/food-database-api",
       },
     ],
-    github: "https://github.com/adb8/DigestiCare/",
-    image: "demo/DigestiCare.png",
+    github: "https://github.com/adb8/digesticare/",
+    image: "demo/digesticare.png",
     created: "03/2024",
   },
   {
@@ -94,12 +94,12 @@ export const projects = [
         link: "https://openai.com/api",
       },
     ],
-    github: "https://github.com/adb8/MyHealth/",
-    image: "demo/MyHealth.png",
+    github: "https://github.com/adb8/myhealth/",
+    image: "demo/myhealth.png",
     created: "03/2024",
   },
   {
-    title: "Vulnerability Classifier",
+    title: "Insecure Code Classifier",
     description:
       "MLMs to classify poor input validation built using Pandas, Tensorflow, and scikit-learn. Harvested training data using OpenAI API. Achieved 90%+ overall accuracy. Made as part of a research project.",
     hyperlinks: [
@@ -108,16 +108,16 @@ export const projects = [
         link: "https://openai.com/api",
       },
     ],
-    github: "https://github.com/adb8/vulnerability-classifier",
-    image: "demo/vulnerability-classifier.png",
+    github: "https://github.com/adb8/insecure-code-classifier",
+    image: "demo/insecure-code-classifier.png",
     created: "07/2023",
   },
   {
     title: "NoteStack",
     description:
       "Fullstack web app for creating and sharing lightweight notes built using MongoDB, Express.js, React.js, Node.js.",
-    image: "demo/NoteStack.png",
-    github: "https://github.com/adb8/NoteStack/",
+    image: "demo/notestack.png",
+    github: "https://github.com/adb8/notestack/",
     created: "11/2023",
   },
   {
