@@ -65,7 +65,7 @@ export const projects = [
   {
     title: "DigestiCare",
     description:
-      "Mobile app to help IBD sufferers realize their trigger foods. Built using React Native (Expo), MongoDB, Express.js, Puppeteer, and Edamam Food API. Won 1st place at Google Play's & All Star Code's TEI 2024.",
+      "Mobile app to help IBD sufferers realize their trigger foods. Built using React Native (Expo), MongoDB, Express.js, Puppeteer, and Edamam Food API. Won 1st place at Google Play's & All Star Code's TEI 2024 (6 projects).",
     hyperlinks: [
       {
         text: "Edamam Food API",
@@ -79,7 +79,7 @@ export const projects = [
   {
     title: "MyHealth",
     description:
-      "Mobile app for speaking to your doctor, finding hospitals, managing appointments, and receiving AI-powered health screenings. Built using React Native (Expo), MongoDB, Express.js, OpenAI API, and CBI's hospital API. Won 1st place at Bronx Science's AtomHacks 2024.",
+      "Mobile app for speaking to your doctor, finding hospitals, managing appointments, and receiving AI-powered health screenings. Built using React Native (Expo), MongoDB, Express.js, OpenAI API, and CBI's hospital API. Won 1st place at Bronx Science's AtomHacks 2024 (40 teams, 150 participants).",
     hyperlinks: [
       {
         text: "CBI's hospital API",
@@ -101,7 +101,7 @@ export const projects = [
   {
     title: "Vulnerability Classifier",
     description:
-      "MLMs to classify poor input validation built using Pandas, Tensorflow, and scikit-learn. Harvested training data using OpenAI API. Achieved 90%+ overall accuracy. Made as a part of a ML research project.",
+      "MLMs to classify poor input validation built using Pandas, Tensorflow, and scikit-learn. Harvested training data using OpenAI API. Achieved 90%+ overall accuracy. Made as part of a research project.",
     hyperlinks: [
       {
         text: "OpenAI API",

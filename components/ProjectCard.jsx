@@ -79,14 +79,14 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
               )}
               {deployment && (
                 <strong>
-                  <a className="text-blue-400 hover:underline" href={github}>
+                  <a className="text-blue-400 hover:underline" href={deployment}>
                     DEPLOYMENT
                   </a>
                 </strong>
               )}
               {demo && (
                 <strong>
-                  <a className="text-blue-400 hover:underline" href={github}>
+                  <a className="text-blue-400 hover:underline" href={demo}>
                     DEMO
                   </a>
                 </strong>
