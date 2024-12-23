@@ -7,7 +7,7 @@ const TEXTS = ["Abu!", "a programmer!", "a student!", "an engineer!", "a designe
 const Hero = () => {
   return (
     <h1
-      className={`${headerFont.className} text-xl mt-12 mb-6 md:text-left text-center`}
+      className={`${headerFont.className} text-2xl mt-12 mb-8 md:text-left text-center text-[rgb(250,250,250)]`}
       style={{
         whiteSpace: "nowrap",
         overflow: "hidden",

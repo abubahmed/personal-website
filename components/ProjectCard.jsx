@@ -63,13 +63,13 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
             {image && <img src={image} ref={imgRef} alt={description} width={"100%"} />}
           </main>
           <div className="text-md p-6 text-base">
-            <div className={`${subheaderFont.className} mb-3 text-lg`}>{title}</div>
+            <div className={`${subheaderFont.className} mb-3 text-lg text-[rgb(250,250,250)]`}>{title}</div>
             <div
               className="mb-5"
               dangerouslySetInnerHTML={{
                 __html: hyperlinks ? createHyperLinks(description, hyperlinks) : description,
               }}></div>
-            <div className="text-base flex flex-row gap-4">
+            <div className="text-base flex flex-row gap-4 text-[rgb(250,250,250)]">
               {github && (
                 <strong>
                   <a className="text-blue-400 hover:underline" href={github}>
@@ -110,13 +110,13 @@ const ProjectCard = ({ title, description, github, deployment, demo, image, hype
               {image && <img src={image} alt={description} width={"100%"} className="blue-tint" />}
             </main>
             <div className="w-[60%] p-6 text-base">
-              <div className={`${subheaderFont.className} mb-3 text-lg`}>{title}</div>
+              <div className={`${subheaderFont.className} mb-3 text-lg text-[rgb(250,250,250)]`}>{title}</div>
               <div
                 className="mb-5"
                 dangerouslySetInnerHTML={{
                   __html: hyperlinks ? createHyperLinks(description, hyperlinks) : description,
                 }}></div>
-              <div className="text-base flex flex-row gap-4">
+              <div className="text-base flex flex-row gap-4 text-[rgb(250,250,250)]">
                 {github && (
                   <strong>
                     <a className="text-blue-400 hover:underline" href={github}>
